@@ -1,25 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="6185.10" systemVersion="14A360a" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="NO" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="General_Knowledge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-by-cKA">
+                                <rect key="frame" x="20" y="218" width="910" height="407"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Cupertino"/>
+                                <connections>
+                                    <action selector="answer1Selected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="CVk-Oa-qBP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-ym-EEb">
+                                <rect key="frame" x="990" y="218" width="910" height="407"/>
+                                <color key="backgroundColor" red="0.3771824459" green="0.82475142050000005" blue="0.55630822140000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Sacramento"/>
+                                <connections>
+                                    <action selector="answer2Selected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="6Qp-2d-nw4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-mt-YgY">
+                                <rect key="frame" x="20" y="649" width="910" height="407"/>
+                                <color key="backgroundColor" red="0.4280167818069458" green="0.081207297742366791" blue="0.36452347040176392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="San Francisco"/>
+                                <connections>
+                                    <action selector="answer3Selected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="3sY-7o-lyf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-Eh-PBt">
+                                <rect key="frame" x="990" y="649" width="910" height="407"/>
+                                <color key="backgroundColor" red="0.82475142050000005" green="0.61791413770000003" blue="0.41634142559999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Los Angeles"/>
+                                <connections>
+                                    <action selector="answer4Selected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="MHX-EX-k7G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eto-h4-OOl">
+                                <rect key="frame" x="20" y="8" width="930" height="58"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-Nh-d0d">
+                                <rect key="frame" x="970" y="8" width="930" height="58"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the Capital of California?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-F8-LF2">
+                                <rect key="frame" x="20" y="74" width="1880" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L3k-F8-LF2" firstAttribute="top" secondItem="X7s-Nh-d0d" secondAttribute="bottom" constant="8" symbolic="YES" id="1cB-hh-p5p"/>
+                            <constraint firstItem="xg2-ym-EEb" firstAttribute="top" secondItem="L3k-F8-LF2" secondAttribute="bottom" constant="24" symbolic="YES" id="1vc-81-4Dm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hyj-Eh-PBt" secondAttribute="bottom" constant="24" symbolic="YES" id="2q1-pX-kuN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hne-mt-YgY" secondAttribute="bottom" constant="24" symbolic="YES" id="46X-hQ-hqg"/>
+                            <constraint firstItem="4fj-by-cKA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4gf-kl-IMy"/>
+                            <constraint firstItem="xg2-ym-EEb" firstAttribute="width" secondItem="4fj-by-cKA" secondAttribute="width" id="8nK-0i-0oW"/>
+                            <constraint firstItem="X7s-Nh-d0d" firstAttribute="height" secondItem="eto-h4-OOl" secondAttribute="height" id="9mX-gZ-Pu2"/>
+                            <constraint firstItem="eto-h4-OOl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BeY-p3-m9w"/>
+                            <constraint firstItem="L3k-F8-LF2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CWz-rQ-TcG"/>
+                            <constraint firstItem="X7s-Nh-d0d" firstAttribute="leading" secondItem="eto-h4-OOl" secondAttribute="trailing" constant="20" id="CXc-1n-rsd"/>
+                            <constraint firstItem="Hne-mt-YgY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H8W-Tp-wha"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hyj-Eh-PBt" secondAttribute="trailing" id="HkY-fH-tZZ"/>
+                            <constraint firstItem="hyj-Eh-PBt" firstAttribute="leading" secondItem="Hne-mt-YgY" secondAttribute="trailing" constant="60" symbolic="YES" id="Lqh-XB-UWE"/>
+                            <constraint firstItem="hyj-Eh-PBt" firstAttribute="width" secondItem="4fj-by-cKA" secondAttribute="width" id="Pzx-hw-k37"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xg2-ym-EEb" secondAttribute="trailing" id="SAi-x6-E70"/>
+                            <constraint firstItem="hyj-Eh-PBt" firstAttribute="height" secondItem="4fj-by-cKA" secondAttribute="height" id="U64-C7-fnc"/>
+                            <constraint firstItem="X7s-Nh-d0d" firstAttribute="width" secondItem="eto-h4-OOl" secondAttribute="width" id="ULA-KL-TgL"/>
+                            <constraint firstItem="Hne-mt-YgY" firstAttribute="width" secondItem="4fj-by-cKA" secondAttribute="width" id="Xhm-bY-VbC"/>
+                            <constraint firstItem="X7s-Nh-d0d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="acR-Ag-73X"/>
+                            <constraint firstItem="Hne-mt-YgY" firstAttribute="top" secondItem="4fj-by-cKA" secondAttribute="bottom" constant="24" symbolic="YES" id="dv9-42-NJ1"/>
+                            <constraint firstItem="xg2-ym-EEb" firstAttribute="leading" secondItem="4fj-by-cKA" secondAttribute="trailing" constant="60" symbolic="YES" id="hea-C6-3d2"/>
+                            <constraint firstItem="hyj-Eh-PBt" firstAttribute="top" secondItem="xg2-ym-EEb" secondAttribute="bottom" constant="24" symbolic="YES" id="jrh-0F-igm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7s-Nh-d0d" secondAttribute="trailing" id="qsP-WD-4v7"/>
+                            <constraint firstItem="4fj-by-cKA" firstAttribute="top" secondItem="L3k-F8-LF2" secondAttribute="bottom" constant="24" symbolic="YES" id="ryR-fB-UML"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L3k-F8-LF2" secondAttribute="trailing" id="tg5-So-B09"/>
+                            <constraint firstItem="xg2-ym-EEb" firstAttribute="height" secondItem="4fj-by-cKA" secondAttribute="height" id="vdV-Ee-acH"/>
+                            <constraint firstItem="Hne-mt-YgY" firstAttribute="height" secondItem="4fj-by-cKA" secondAttribute="height" id="w1u-45-2JW"/>
+                            <constraint firstItem="eto-h4-OOl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yGb-c2-4hI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="4fj-by-cKA" id="ny9-P8-jjg"/>
+                        <outlet property="answer2" destination="xg2-ym-EEb" id="PzP-J6-kRu"/>
+                        <outlet property="answer3" destination="Hne-mt-YgY" id="23A-34-rh0"/>
+                        <outlet property="answer4" destination="hyj-Eh-PBt" id="B9P-hJ-BLa"/>
+                        <outlet property="currentSummary" destination="X7s-Nh-d0d" id="uqe-1k-hWH"/>
+                        <outlet property="currentTemp" destination="eto-h4-OOl" id="msr-Fa-39y"/>
+                        <outlet property="question" destination="L3k-F8-LF2" id="YnW-yu-zAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="216" y="-383"/>
         </scene>
     </scenes>
 </document>
